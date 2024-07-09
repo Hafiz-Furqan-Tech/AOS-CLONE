@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: linear-gradient(rgba(63, 81, 181, 0.8), rgba(63, 81, 181, 0.8)), url('bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo {
+    height: 4rem;
+    width: 5rem;
+    object-fit: cover;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.main h1 {
+    color: #00000080;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-bottom: 1.5rem;
+}
+
+.main h6 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-bottom: 4rem;
+    font-weight: lighter;
+}
+
+.main p {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.maindiv {
+    height: auto;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    overflow: hidden;
+}
+
+.line {
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    height: 6rem;
+    line-height: 6rem;
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.div {
+    height: 13rem;
+    width: 25rem;
+    border: 0.8rem solid white;
+    margin-bottom: 2.5rem;
+    margin-top: 3.5rem;
+    background-color: #202426;
+    color: white;
+    padding-left: 2rem;
+    padding-top: 5rem;
+}
+.ddiv {
+        height: 10rem;
+        width: 20rem;
+        border-width: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        padding-left: 1rem;
+        padding-top: 2.5rem;
+    }
+
+.rightdiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.anchordiv {
+    height: 14rem;
+    width: 34rem;
+    border: 0.8rem solid white;
+    margin-bottom: 2.5rem;
+    margin-top: 3.5rem;
+    background-color: #202426;
+    padding-top: 5rem;
+    color: white;
+    padding-left: 2rem;
+}
+
+.footer {
+    height: 10rem;
+    width: 100%;
+    background-color: #0E0F34;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    margin-left: 3rem;
+    padding-top: 1.5rem;
+}
+
+.btn {
+    border: 2px solid #ff4081;
+    color: #ff4081;
+    background-color: #0E0F34;
+    border-radius: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bolder;
+    margin-left: 3rem;
+}
+
+.btn:hover {
+    background-color: #ff4081;
+    color: black;
+}
+
+/* ==========media quries=================== */
+
+ @media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+    .maindiv {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .div {
+        height: 12.5rem;
+        width: 23rem;
+        border: 0.7rem solid white;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+        background-color: #202426;
+        color: white;
+        padding-left: 2rem;
+        padding-top: 4rem;
+    }
+    .ddiv{
+        height: 12.5rem;
+        width: 23rem;
+        border: 0.7rem solid white;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+        background-color: #202426;
+        color: white;
+        padding-left: 2rem;
+        padding-top: 4rem;
+    }
+
+    .anchordiv {
+        height: 13.5rem;
+        width: 32rem;
+        border: 0.7rem solid white;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+        background-color: #202426;
+        padding-top: 4rem;
+        color: white;
+        padding-left: 2rem;
+    }
+
+    .footer h2 {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main h1 {
+        font-size: 3rem;
+    }
+
+    .main h6 {
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+    }
+
+    .div {
+        height: 10rem;
+        width: 20rem;
+        border-width: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        padding-left: 1rem;
+        padding-top: 2.5rem;
+    }
+    .ddiv{
+         height: 10rem;
+        width: 20rem;
+        border-width: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        padding-left: 1rem;
+        padding-top: 2.5rem;
+    }
+
+    .anchordiv {
+        height: 11rem;
+        width: 28rem;
+        border-width: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .footer h2 {
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .maindiv {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .line {
+        font-size: 1.5rem; 
+        height: auto; 
+        line-height: 2rem; 
+        margin-top: 1rem; 
+        margin-bottom: 1rem; 
+    }
+    .leftdiv{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 342px) {
+    .footer {
+        height: 12rem;
+        width: 100%;
+        background-color: #0E0F34;
+    }
+
+    .footer h2 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        padding-top: 0.5rem;
+    }
+
+    .btn {
+        border: 2px solid #ff4081;
+        color: #ff4081;
+        background-color: #0E0F34;
+        border-radius: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: bolder;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .ddiv{
+        height: 20rem;
+        font-weight: lighter;
+    }
+}
